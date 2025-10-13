@@ -8,11 +8,15 @@ The dataset was filtered to include questions from 2020 to 2022, allowing compar
 ### Architecture
 <img width="940" height="375" alt="image" src="https://github.com/user-attachments/assets/1c3a6ffd-abe8-4e2f-a0d2-4171b6fa3cf5" />
 
-* A star schema model was designed with:
+In this project:
+* STG (staging): models clean and standardize raw data from BigQuery sources.  
+* INT (intermediate): models aggregate and transform the staging outputs to prepare them for analysis in the final fact and dimension tables.  
+
+ A star schema model was designed with:
 
 * agg_tag_week_trends as the fact table
 
-dim_tag and dim_time as dimension tables
+* dim_tag and dim_time as dimension tables
 This simple model structure supports scalability and clear analysis in visualization tools.
 It enables weekly trend analysis per tag, showing how engagement changes over time.
 
@@ -36,7 +40,7 @@ The unanswered rate metric was used to visualize areas with lower community enga
 
 
 Two bar charts compare the most frequent tags and unanswered tags.
-The overlap shows that highly popular topics like Python, JavaScript, Java, and ReactJS also have high volumes of unanswered questions — suggesting fast-growing but complex areas of discussion.
+The overlap shows that highly popular topics like Python, JavaScript, Java, and ReactJS also have high volumes of unanswered questions, suggesting fast-growing but complex areas of discussion.
 
 <img width="504" height="326" alt="image" src="https://github.com/user-attachments/assets/fdaad128-2781-43cd-8577-1131f60f0be2" />
 
