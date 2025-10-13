@@ -1,0 +1,26 @@
+version: 2
+
+models:
+  - name: agg_tag_week_trends
+    columns:
+      - name: tag_name
+        tests:
+          - not_null
+      - name: week_start
+        tests:
+          - not_null
+      - name: total_questions
+        tests:
+          - not_null
+      - name: answered_questions
+        tests:
+          - not_null
+      - name: accepted_questions
+        tests:
+          - not_null
+      - name: unanswered_questions
+        tests:
+          - not_null
+      - name: unanswered_rate
+        tests:
+          - not_null
