@@ -1,0 +1,19 @@
+version: 2
+
+models:
+  - name: stg_posts_questions
+    columns:
+      - name: question_id
+        tests:
+          - not_null
+          - unique
+      - name: created_at
+        tests:
+          - not_null
+      - name: answer_count
+        tests:
+          - not_null
+      - name: accepted_answer_id
+      - name: tags_array
+        tests:
+          - not_null
