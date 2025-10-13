@@ -1,0 +1,21 @@
+version: 2
+
+models:
+  - name: dim_tag
+    columns:
+      - name: tag_name
+        tests:
+          - not_null
+          - unique
+
+  - name: dim_time
+    columns:
+      - name: week_start
+        tests:
+          - not_null
+          - unique
+      - name: month_start
+      - name: year
+      - name: month_number
+      - name: month_name
+      - name: week_number
