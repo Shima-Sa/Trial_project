@@ -1,0 +1,16 @@
+version: 2
+
+models:
+  - name: int_question_tags
+    columns:
+      - name: question_id
+        tests:
+          - not_null
+      - name: created_at
+        tests:
+          - not_null
+      - name: answer_count
+      - name: accepted_answer_id
+      - name: tag_name
+        tests:
+          - not_null
