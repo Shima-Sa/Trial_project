@@ -8,6 +8,7 @@ with base as (
     accepted_answer_id,
     tags_array
   from {{ ref('stg_posts_questions') }}
+  where extract(year from created_at) between 2020 and 2022
 )
 select
   question_id,
