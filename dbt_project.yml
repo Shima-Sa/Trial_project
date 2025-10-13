@@ -37,9 +37,9 @@ clean-targets:         # directories to be removed by `dbt clean`
 
 models:
   my_new_project:
-    +materialized: view
+    +schema: dbt_shima  
     staging:
     intermediate:
-    marts:
     dimensions:
-
+    marts:
+      +materialized: table
