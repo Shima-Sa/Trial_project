@@ -1,3 +1,10 @@
+### This is my rebuild project
+https://github.com/shimasaberianpour1375-gif/Trial_project
+## Project links
+- [Looker Studio Dashboard](https://lookerstudio.google.com/s/icf5w4u70h8)
+- [BigQuery Project](https://console.cloud.google.com/bigquery?ws=!1m4!1m3!3m2!1snotional-gist-474313-e1!2sdbt_shimasaberianpour1375)
+- [Google Document ](https://docs.google.com/document/d/10gjeLOtjLAX8jtwaD_nsiGkv81DkPkxBL7Ez9uqTY_k/edit?usp=sharing)
+
 ### Stack Overflow Trending and Unanswered Tags Analysis
 This is an end-to-end mini analytics project using the Stack Overflow public dataset in BigQuery.
 The goal is to identify trending topics with low answer rates, which can highlight areas where developers face challenges or where community engagement and technical documentation could be improved.
